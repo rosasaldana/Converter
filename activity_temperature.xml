@@ -7,16 +7,6 @@
     tools:context=".TemperatureActivity">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginTop="134dp"
-        android:text="FROM:"
-        android:textColor="@android:color/holo_blue_dark" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
@@ -29,63 +19,32 @@
         android:textSize="30sp" />
 
     <RadioButton
-        android:id="@+id/KelvinButton2"
+        android:id="@+id/FahtoCel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/celsiusButton"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="76dp"
-        android:layout_weight="1"
-        android:text="Kelvin"
+        android:layout_alignStart="@+id/CelToFah"
+        android:layout_below="@+id/CelToFah"
+        android:text="From Fahrenheit to Celsius"
         android:textColor="@android:color/holo_green_dark" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="268dp"
-        android:layout_height="33dp"
-        android:layout_alignEnd="@+id/textView"
+    <RadioButton
+        android:id="@+id/CelToKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/FahtoCel"
+        android:layout_below="@+id/FahtoCel"
+        android:text="From Celsius to Kelvin"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <RadioButton
+        android:id="@+id/CelToFah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="92dp"
-        android:fontFamily="sans-serif"
-        android:text="Converting Temperature: "
-        android:textColor="@android:color/darker_gray" />
-
-    <RadioButton
-        android:id="@+id/celsiusButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/fahrenheitButton"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginBottom="-245dp"
-        android:text="Celsius"
-        android:textColor="@android:color/holo_green_dark" />
-
-    <RadioButton
-        android:id="@+id/fahrenheitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginTop="245dp"
-        android:text="Fahrenheit"
-        android:textColor="@android:color/holo_green_dark" />
-
-    <RadioButton
-        android:id="@+id/kelvinButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/celsiusButton"
-        android:layout_alignStart="@+id/textView2"
-        android:text="Kelvin"
-        android:textColor="@android:color/holo_green_dark" />
-
-    <RadioButton
-        android:id="@+id/celsiusButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/KelvinButton2"
-        android:layout_alignTop="@+id/celsiusButton"
-        android:text="Celsius"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="162dp"
+        android:text="From Celsius to Fahrenheit"
         android:textColor="@android:color/holo_green_dark" />
 
     <TextView
@@ -103,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="191dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="Convert"
         android:textColor="@android:color/background_light" />
@@ -112,11 +71,12 @@
         android:id="@+id/tempText"
         android:layout_width="149dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_marginTop="143dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="107dp"
         android:ems="10"
-        android:hint="Type Number Here"
+        android:hint="Enter Temperature"
         android:inputType="number"
         android:textSize="14sp" />
 
