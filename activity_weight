@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeightActivity">
+
+    <RadioButton
+        android:id="@+id/gram2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gram"
+        android:layout_toEndOf="@+id/textView6"
+        android:fontFamily="serif"
+        android:text="Gram"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:fontFamily="serif"
+        android:text="Weight"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignTop="@+id/textView7"
+        android:fontFamily="serif"
+        android:text="TO :"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="158dp"
+        android:fontFamily="serif"
+        android:text="FROM :"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_toStartOf="@+id/textView8"
+        android:text="Converting Weight:"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/gram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="224dp"
+        android:fontFamily="serif"
+        android:text="Gram"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/pound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/gram"
+        android:fontFamily="serif"
+        android:text="Pound"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/ounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/pound"
+        android:fontFamily="serif"
+        android:text="Ounce"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/pound2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gram"
+        android:layout_toEndOf="@+id/textView6"
+        android:fontFamily="serif"
+        android:text="Pound"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/ounce2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pound"
+        android:layout_toEndOf="@+id/textView6"
+        android:fontFamily="serif"
+        android:text="Ounce"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/kilogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/ounce"
+        android:fontFamily="serif"
+        android:text="Kilogram"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/milligram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/kilogram"
+        android:fontFamily="serif"
+        android:text="Milligram"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/kilogram2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ounce"
+        android:layout_toEndOf="@+id/textView6"
+        android:fontFamily="serif"
+        android:text="Kilogram"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/milligram2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kilogram"
+        android:layout_toEndOf="@+id/textView6"
+        android:fontFamily="serif"
+        android:text="Milligram"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Convert"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/weightText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView7"
+        android:ems="10"
+        android:hint="Type Number Here"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+</RelativeLayout>
