@@ -12,88 +12,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="55dp"
         android:fontFamily="serif"
         android:text="Length"
-        android:textColor="#c82996"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="36sp" />
-
-    <RadioButton
-        android:id="@+id/kiloToMeter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="133dp"
-        android:fontFamily="serif"
-        android:text="Kilometer to Meter"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/kiloToCenti"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/kiloToMeter"
-        android:fontFamily="serif"
-        android:text="Kilometer to Centimeter"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/kiloToMili"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/kiloToCenti"
-        android:fontFamily="serif"
-        android:text="Kilometer to Millimeter"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/kiloToMile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/kiloToMili"
-        android:fontFamily="serif"
-        android:text="Kilometer to Mile"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/kilometerToFoot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignStart="@+id/kiloToMile"
-        android:layout_below="@+id/kiloToYard"
-        android:fontFamily="serif"
-        android:text="Kilometer to Foot"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/kiloToYard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/kiloToMile"
-        android:layout_below="@+id/kiloToMile"
-        android:fontFamily="serif"
-        android:text="Kilometer to Yard"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
 
     <Button
         android:id="@+id/convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/Length"
-        android:layout_marginBottom="87dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="168dp"
+        android:backgroundTint="@android:color/holo_red_dark"
         android:text="Convert"
         android:textColor="@android:color/background_light" />
 
@@ -103,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="126dp"
         android:ems="10"
         android:hint="Type Number Here"
         android:inputType="number"
@@ -112,50 +44,39 @@
 
     <TextView
         android:id="@+id/result"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/result"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:id="@+id/footToInches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/InchesToFoot"
+        android:layout_alignStart="@+id/lengthText"
+        android:layout_marginBottom="-224dp"
+        android:text="Foot to Inches"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/InchesToFoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/lengthText"
+        android:layout_marginTop="224dp"
+        android:text="Inches to Foot"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="51dp"
-        android:layout_toEndOf="@+id/kiloToYard" />
-
-    <RadioButton
-        android:id="@+id/KiloToInch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/kilometerToFoot"
-        android:fontFamily="serif"
-        android:text="Kilometer To Inch"
-        android:textColor="@android:color/holo_purple" />
-
-    <RadioButton
-        android:id="@+id/footToInch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/kiloToCenti"
-        android:layout_toEndOf="@+id/convert"
-        android:fontFamily="serif"
-        android:text="Foot to Inch"
-        android:textColor="@android:color/holo_purple" />
-
-    <RadioButton
-        android:id="@+id/yardToFoot2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/kiloToMeter"
-        android:layout_toEndOf="@+id/convert"
-        android:fontFamily="serif"
-        android:text="Yard To Foot"
-        android:textColor="@android:color/holo_purple" />
-
-    <RadioButton
-        android:id="@+id/mileToYard2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/kiloToMeter"
-        android:layout_toEndOf="@+id/convert"
-        android:fontFamily="serif"
-        android:text="Mile to Yard"
-        android:textColor="@android:color/holo_purple" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="137dp" />
 
 </RelativeLayout>
