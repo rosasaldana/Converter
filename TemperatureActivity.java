@@ -6,14 +6,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 public class TemperatureActivity extends AppCompatActivity {
     // temperature field
     EditText temperature;
+    // result field
+    TextView result;
     // buttons
     RadioButton celToFah;
     RadioButton fahToCel;
     RadioButton celToKelv;
+    RadioButton kelvToCel;
     private Button convertButton;
 
     @Override
@@ -23,9 +27,13 @@ public class TemperatureActivity extends AppCompatActivity {
         // initializing variables in java file to variables in xml file
         celToFah = (RadioButton) findViewById(R.id.CelToFah);
         fahToCel = (RadioButton) findViewById(R.id.FahtoCel);
-        celToKelv = (RadioButton) findViewById(R.id.CelToKelvin);
+        celToKelv = (RadioButton) findViewById(R.id.celToKelvin);
         temperature = (EditText) findViewById(R.id.tempText);
+        kelvToCel = (RadioButton) findViewById(R.id.KelvToCel);
+        result = (TextView) findViewById(R.id.result);
+
         convertButton = (Button) findViewById(R.id.convert);
+
         convertButton.setOnClickListener( new View.OnClickListener() {
             // allows a subclass (child) class to provide a specific implementation of a method
             // that is already provided by one of its super-classes or parent classes.
@@ -43,17 +51,28 @@ public class TemperatureActivity extends AppCompatActivity {
             value = celsiusToFahrenheit(value);
         else if (fahToCel.isChecked())
             value = fahrenheitToCelsius(value);
+        else if (celToKelv.isChecked())
+            value = celsiusToKelvin(value);
+        else if (kelvToCel.isChecked())
+            value = kelvinToCelsius(value);
         // set the text back to the new value
-        temperature.setText(new Double(value).toString());
+        // temperature.setText(new Double(value).toString());
+        result.setText(new Double(value).toString());
     }
     public static double celsiusToFahrenheit(double celsius) {
-        return 32 + celsius * (9 / 5);
+        double value = (double) celsius * 1.8;
+        return 32 + value;
     }
-
     public static double fahrenheitToCelsius(double fahrenheit) {
-        return (fahrenheit - 32) * (5 / 9);
+        double value =  0.55555555555;
+        return (fahrenheit - 32) * value;
     }
-
+    public static double celsiusToKelvin(double c) {
+        double value = 273.15;
+        return c + value;
+    }
+    public static double kelvinToCelsius(double k){
+        double value = 273.15;
+        return k - value;
+    }
 }
-
-//once it's clicked let's get the Id's and then on click f the convert button do the converstions+
