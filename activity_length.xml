@@ -44,10 +44,13 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/result"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="275dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="238dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
     <RadioButton
         android:id="@+id/footToInches"
@@ -58,7 +61,7 @@
         android:layout_marginBottom="-224dp"
         android:text="Foot to Inches"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <RadioButton
         android:id="@+id/InchesToFoot"
@@ -69,7 +72,7 @@
         android:layout_marginTop="224dp"
         android:text="Inches to Foot"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/result"
