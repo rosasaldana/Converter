@@ -16,8 +16,6 @@ public class TemperatureActivity extends AppCompatActivity {
     // buttons
     RadioButton celToFah;
     RadioButton fahToCel;
-    RadioButton celToKelv;
-    RadioButton kelvToCel;
     private Button convertButton;
 
     @Override
@@ -27,13 +25,9 @@ public class TemperatureActivity extends AppCompatActivity {
         // initializing variables in java file to variables in xml file
         celToFah = (RadioButton) findViewById(R.id.CelToFah);
         fahToCel = (RadioButton) findViewById(R.id.FahtoCel);
-        celToKelv = (RadioButton) findViewById(R.id.celToKelvin);
         temperature = (EditText) findViewById(R.id.tempText);
-        kelvToCel = (RadioButton) findViewById(R.id.KelvToCel);
         result = (TextView) findViewById(R.id.result);
-
         convertButton = (Button) findViewById(R.id.convert);
-
         convertButton.setOnClickListener( new View.OnClickListener() {
             // allows a subclass (child) class to provide a specific implementation of a method
             // that is already provided by one of its super-classes or parent classes.
@@ -51,10 +45,6 @@ public class TemperatureActivity extends AppCompatActivity {
             value = celsiusToFahrenheit(value);
         else if (fahToCel.isChecked())
             value = fahrenheitToCelsius(value);
-        else if (celToKelv.isChecked())
-            value = celsiusToKelvin(value);
-        else if (kelvToCel.isChecked())
-            value = kelvinToCelsius(value);
         // set the text back to the new value
         // temperature.setText(new Double(value).toString());
         result.setText(new Double(value).toString());
@@ -66,13 +56,5 @@ public class TemperatureActivity extends AppCompatActivity {
     public static double fahrenheitToCelsius(double fahrenheit) {
         double value =  0.55555555555;
         return (fahrenheit - 32) * value;
-    }
-    public static double celsiusToKelvin(double c) {
-        double value = 273.15;
-        return c + value;
-    }
-    public static double kelvinToCelsius(double k){
-        double value = 273.15;
-        return k - value;
     }
 }
