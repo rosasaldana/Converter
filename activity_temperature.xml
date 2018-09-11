@@ -22,18 +22,10 @@
         android:id="@+id/FahtoCel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/CelToFah"
-        android:layout_below="@+id/CelToFah"
+        android:layout_marginTop="204dp"
         android:text="From Fahrenheit to Celsius"
-        android:textColor="@android:color/holo_green_dark" />
-
-    <RadioButton
-        android:id="@+id/CelToKelvin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/FahtoCel"
-        android:layout_below="@+id/FahtoCel"
-        android:text="From Celsius to Kelvin"
         android:textColor="@android:color/holo_green_dark" />
 
     <RadioButton
@@ -47,22 +39,12 @@
         android:text="From Celsius to Fahrenheit"
         android:textColor="@android:color/holo_green_dark" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/KelvinButton2"
-        android:layout_alignTop="@+id/textView3"
-        android:text="TO:"
-        android:textColor="@android:color/holo_blue_dark" />
-
     <Button
         android:id="@+id/convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/result"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="191dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="Convert"
         android:textColor="@android:color/background_light" />
@@ -71,13 +53,22 @@
         android:id="@+id/tempText"
         android:layout_width="149dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="107dp"
+        android:layout_alignStart="@+id/FahtoCel"
+        android:layout_marginTop="109dp"
         android:ems="10"
         android:hint="Enter Temperature"
         android:inputType="number"
         android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="255dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
 </RelativeLayout>
