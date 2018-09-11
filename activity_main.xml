@@ -20,37 +20,42 @@
 
     <Button
         android:id="@+id/lengthButton"
-        android:layout_width="wrap_content"
+        android:layout_width="153dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="137dp"
-        android:layout_marginTop="94dp"
+        android:layout_alignStart="@+id/weightButton"
+        android:layout_marginTop="102dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:fontFamily="sans-serif-condensed"
-        android:text="Length" />
+        android:text="Length"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/weightButton"
-        android:layout_width="wrap_content"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/lengthButton"
-        android:layout_marginTop="155dp"
+        android:layout_alignStart="@+id/tempButton"
+        android:layout_marginTop="165dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:fontFamily="sans-serif-condensed"
-        android:text="Weight" />
+        android:text="Weight"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/tempButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="153dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/lengthButton"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="226dp"
         android:backgroundTint="@android:color/holo_red_light"
         android:fontFamily="sans-serif-condensed"
         android:text="Temperature"
-        android:textSize="11sp" />
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
 
 </RelativeLayout>
