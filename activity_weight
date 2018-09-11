@@ -19,80 +19,36 @@
         android:textSize="36sp" />
 
     <RadioButton
-        android:id="@+id/gramToPound"
+        android:id="@+id/gramTokilo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="133dp"
+        android:layout_alignStart="@+id/weightText"
+        android:layout_marginTop="150dp"
         android:fontFamily="serif"
-        android:text="Gram to Pound"
+        android:text="Gram to Kilogram"
         android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
+        android:textSize="20sp" />
 
     <RadioButton
-        android:id="@+id/poundToGram"
+        android:id="@+id/KiloToGram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/gramToPound"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/gramTokilo"
+        android:layout_marginTop="194dp"
         android:fontFamily="serif"
-        android:text="Pound to Gram"
+        android:text="Kilogram to Gram"
         android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/ounceToGram"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/poundToGram"
-        android:fontFamily="serif"
-        android:text="Ounce to Gram"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/gramToOunce"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/ounceToGram"
-        android:fontFamily="serif"
-        android:text="Gram to Ounce"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/poundToOunce"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignStart="@+id/gramToOunce"
-        android:layout_below="@+id/ounceToPound"
-        android:fontFamily="serif"
-        android:text="Pound to Ounce"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/ounceToPound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/gramToOunce"
-        android:layout_below="@+id/gramToOunce"
-        android:fontFamily="serif"
-        android:text="Ounce To Pound"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="14sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_marginBottom="87dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="238dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:text="Convert"
         android:textColor="@android:color/background_light" />
@@ -103,8 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="97dp"
         android:ems="10"
         android:hint="Type Number Here"
         android:inputType="number"
@@ -112,30 +68,11 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="51dp"
-        android:layout_toEndOf="@+id/ounceToPound" />
-
-    <RadioButton
-        android:id="@+id/gramToMilligram"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/gramToPound"
-        android:layout_toEndOf="@+id/weightText"
-        android:fontFamily="serif"
-        android:text="Gram to Milligram"
-        android:textColor="@android:color/holo_purple" />
-
-    <RadioButton
-        android:id="@+id/gramToKilo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/gramToPound"
-        android:layout_toEndOf="@+id/weightText"
-        android:fontFamily="serif"
-        android:text="Gram to Kilogram"
-        android:textColor="@android:color/holo_purple" />
+        android:layout_width="288dp"
+        android:layout_height="31dp"
+        android:layout_above="@+id/convert"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
 </RelativeLayout>
