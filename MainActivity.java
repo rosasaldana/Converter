@@ -1,8 +1,9 @@
-package com.example.rosit.converter;
+package com.example.localization.convertor;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
@@ -54,14 +55,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openLengthActivity() {
-        // must create an Intent to open activity
-     //   Intent intent = new Intent(this, LengthActivity.class);
-    //    startActivity(intent);
+        // must create an Intent to open activity     LengthActivity
+        Intent intent = new Intent(this, LengthActivity.class);
+        startActivity(intent);
     }
 
     public void openWeightActivity() {
-   //     Intent intent = new Intent( this, WeightActivity.class);
-   //     startActivity(intent);
+      Intent intent = new Intent( this, WeightActivity.class);
+       startActivity(intent);
     }
 
     public void openTemperatureActivity() {
