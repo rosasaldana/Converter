@@ -1,4 +1,4 @@
-package com.example.rosit.converter;
+package com.example.localization.convertor;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,10 +26,14 @@ public class LengthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_length);
         footToIn = findViewById(R.id.footToInches);
         inchToFoot = findViewById(R.id.InchesToFoot);
+        convertButton = findViewById(R.id.convert);
+        result = (TextView) findViewById(R.id.result);
+        lengthText = (EditText) findViewById(R.id.lengthText);
+
         convertButton.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                    convert(v);
+                convert(v);
             }
         });
     }
